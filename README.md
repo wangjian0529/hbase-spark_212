@@ -50,6 +50,7 @@ mvn install:install-file "-Dfile=hbase-spark_2.12-1.0.jar" "-Dpackaging=jar" "-D
 ```
 # 数据源中的属性
 |属性名|描述|
+|------|----------|
 |hdfsurl|将DataFrame存储到HBase时，指定HDFS的URL地址（hdfs://host:port）,如hdfs://hadoop:9000|
 |zkurl|读写HBase时，指定ZooKeeper的URL(host:port),如hadoop:2181|
 |htable|读或写的HBase的表名|
