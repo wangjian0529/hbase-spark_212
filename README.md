@@ -1,11 +1,11 @@
 # hbase-spark_212
-#下载target目录下的依赖包，添加到本地仓库
+# 下载target目录下的依赖包，添加到本地仓库
 ```
 mvn install:install-file "-Dfile=hbase-spark_2.12-1.0.jar" "-Dpackaging=jar" "-DgroupId=com.inspur.spark.hbase" "-DartifactId=hbase-spark_2.12" "-Dversion=1.0"
 ```
-#在自己的项目中添加spark-sql和hbase相关依赖
+# 在自己的项目中添加spark-sql和hbase相关依赖
 ```
-<properties>
+    <properties>
         <spark.version>3.0.0</spark.version>
         <hbase.version>2.1.8</hbase.version>
         <jackson.version>2.12.3</jackson.version>
@@ -43,3 +43,8 @@ mvn install:install-file "-Dfile=hbase-spark_2.12-1.0.jar" "-Dpackaging=jar" "-D
         </dependency>
     </dependencies>
 ```
+# 数据源中的属性
+|-|-|
+|属性名|描述|
+|-|-|
+
