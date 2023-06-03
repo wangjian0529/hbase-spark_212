@@ -54,8 +54,8 @@ mvn install:install-file "-Dfile=hbase-spark_2.12-1.0.jar" "-Dpackaging=jar" "-D
 |hdfsurl|将DataFrame存储到HBase时，指定HDFS的URL地址（hdfs://host:port）,如hdfs://hadoop:9000|
 |zkurl|读写HBase时，指定ZooKeeper的URL(host:port),如hadoop:2181|
 |htable|读或写的HBase的表名|
-|family|将DataFrame存储到HBase时，以字符串格式指定列族，如果有多个列族则通过逗号分隔，如有info和other两个列族"info,other"|
-|schema|读写HBase时指定DataFrame的Schema信息("id string,列族_列 数据类型,....."),如"id string,info_name string,other_age long"|
+|family|将DataFrame存储到HBase时，以字符串格式指定列族，如果有多个列族则通过逗号分隔，如info和other两个列族指定为"info,other"|
+|schema|读写HBase时指定DataFrame的Schema信息("id string,列族_列 数据类型,....."),id为固定字段作为主键使用，如"id string,info_name string,other_age long"|
 # 示例代码
 ```
  val spark=SparkSession.builder().master("local")
