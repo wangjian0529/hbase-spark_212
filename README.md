@@ -41,6 +41,11 @@ mvn install:install-file "-Dfile=hbase-spark_2.12-1.0.jar" "-Dpackaging=jar" "-D
             <artifactId>jackson-annotations</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.inspur.spark.hbase</groupId>
+            <artifactId>hbase-spark_2.12</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 ```
 # 数据源中的属性
